@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Instructor extends Person{
 	
-	List<Integer> courses;
+	private List<Integer> courses;
 	
 	public Instructor(int id, String email, String password, String firstName, String lastName, String address, List<Integer> courses) {
 		super(id, email, password, firstName, lastName, address);
