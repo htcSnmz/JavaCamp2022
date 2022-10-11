@@ -1,0 +1,30 @@
+
+--SELECT CustomerName Adi ,ContactName,Address FROM Customers
+
+--SELECT * FROM Customers where City = 'London'
+
+--SELECT * FROM Products
+
+--SELECT * FROM Products WHERE CategoryId = 1 or CategoryId = 3
+
+--SELECT * FROM Products WHERE CategoryId = 1 and Price >= 10
+
+--SELECT * FROM Products WHERE CategoryID = 1 ORDER BY Price desc
+
+--SELECT COUNT(*) Adet FROM Products where CategoryID = 2
+
+--SELECT CategoryId, COUNT(*) FROM Products GROUP BY CategoryId --Kaç farklı kategori var ?
+
+--SELECT CategoryId, COUNT(*) FROM Products GROUP BY CategoryId HAVING COUNT(*) < 10 --Ürün sayısı 10'dan az olan 
+
+--SELECT CategoryId, COUNT(*) FROM Products WHERE Price  > 20 GROUP BY CategoryId HAVING COUNT(*) < 10
+
+--SELECT Products.ProductID, Products.ProductName, Products.Price, Categories.CategoryName FROM Products JOIN Categories ON Products.CategoryId = Categories.CategoryID WHERE Products.Price < 10
+
+--select * from Products p join OrderDetails od on p.ProductID = od.ProductID
+
+--select * from Products p left join OrderDetails od on p.ProductID = od.ProductID --Satışı olmayan ürünler
+
+--select * from Customers c left join Orders O on c.CustomerId = o.CustomerID where o.CustomerID is null -- Ürün almayan müşteriler
+
+--select * from Products p left join OrderDetails od on p.ProductID = od.ProductID inner join Orders o on o.OrderId = od.OrderID
