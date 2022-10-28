@@ -43,7 +43,7 @@ public class LanguageManager implements LanguageService {
 
 	@Override
 	public void add(Language language) throws Exception {
-		if(!isExistingName(language.getName()) && !language.getName().equals("")) {
+		if(!isExistingName(language.getName()) && (!language.getName().equals("") || language.getName() != null)) {
 		languageRepository.add(language);	
 		}else {
 			throw new Exception("Dil ismi boş geçilemez veya kayıtlı bir dil girilemez.");
