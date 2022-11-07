@@ -1,0 +1,25 @@
+package Kodlama.io.Devs.business.requests.languageRequests;
+
+public class UpdateLanguageRequest {
+
+	private String name;
+
+	public UpdateLanguageRequest() {
+		super();
+	}
+
+	public UpdateLanguageRequest(String name) {
+		super();
+		this.name = name;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	
+}
